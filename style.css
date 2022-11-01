@@ -1,0 +1,205 @@
+.bgs {
+    /*background: url("https://img.freepik.com/free-vector/copy-space-wavy-white-background-layers_23-2148845469.jpg?w=2000");
+  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+#hero2 {
+    background: url("/cdn/bg/Work.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 40%;
+}
+
+.teambg-old {
+    background: url("/cdn/bg/Team.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 90% 30%;
+}
+
+.teambg {
+    background: url("/cdn/bg/Team_v.png");
+    background-size: 14%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 70%;
+}
+
+
+.portbg {
+    background: url("/cdn/bg/Portfolio.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 95% 25%;
+}
+
+.contactbg {
+    background: url("/cdn/bg/Contact.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 95% 25%;
+}
+
+.servicebg {
+    background-color: none;
+    background: url("/cdn/bg/Services.png"), url("/cdn/bg/bg_.png");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, scroll;
+    background-size: 40%, cover;
+    background-position: 100% 38%, 0% 0%;
+    min-height: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+.special {
+    font-family: 'Source Serif Pro', serif !important;
+    font-size: 60px !important;
+    text-transform: inherit !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px;
+    line-height: 76px;
+}
+
+@media only screen and (max-width: 600px) {
+    .special {
+        font-size: 36px !important;
+        line-height: 42px;
+    }
+    #hero2 {
+        background-size: 60%;
+        background-position: 100% 24%;
+    }
+    .servicebg{
+        background-size: 50%,cover;
+        background-position: 100% 25%, 0% 0%;
+        background-attachment: fixed,scroll;
+    }
+}
+
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: #303030;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: #303030;
+    }
+}
+
+@-moz-keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: #303030;
+    }
+}
+
+@-webkit-keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: black;
+    }
+}
+
+@-ms-keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: black;
+    }
+}
+
+@-o-keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: black;
+    }
+}
+
+div.swiper-button-next::after,
+div.swiper-button-prev {
+    color: #303030 !important;
+}
+
+.accordion-button {
+    font-size: 20pt;
+}
+
+.service-list {
+    text-align: left;
+    list-style: none;
+}
+
+.service-list li {
+    list-style-position: inside;
+}
+
+.service-list li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: gray;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+    margin-right: 8px;
+}
+.member img {
+    filter: grayscale(90%) !important;
+}
+.member img:hover {
+    filter: none !important;
+}
